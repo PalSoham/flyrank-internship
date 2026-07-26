@@ -1,0 +1,23 @@
+{
+  "model": "baseline_stale_declining_visible",
+  "lane": "Lane 2 - Refresh / Content Opportunity Scoring",
+  "n_rows": 30000,
+  "base_rate": 0.5421,
+  "precision_at_10": 0.6,
+  "precision_at_20": 0.45,
+  "precision_at_50": 0.38,
+  "precision_at_100": 0.34,
+  "score_weights": {
+    "visibility": 0.4,
+    "staleness": 0.35,
+    "position_risk": 0.25
+  },
+  "thresholds": {
+    "stale_days": 180,
+    "visible_impressions": 500,
+    "page1_position": 10,
+    "old_content_days": 180,
+    "action_refresh_percentile": 80
+  },
+  "note": "label used only for evaluation, never in score formula. No trend_direction/trend_pct/impressions_last_30d used as inputs."
+}
